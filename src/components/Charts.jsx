@@ -11,10 +11,10 @@ import Typed from 'react-typed';
 const Charts = () => {
     
     const data=[
-        {name:"FB",value:200},
-        {name:"IG",value:100},
-        {name:"WA",value:150},
-        {name:"TW",value:75}
+        {name:"JAN",value:200},
+        {name:"FEB",value:100},
+        {name:"MAR",value:150},
+        {name:"APR",value:75}
     ]
 
     const percentage = 66;
@@ -22,10 +22,10 @@ const Charts = () => {
   return (
     <div className='w-full px-4 bg-[#a0a4a0] py-16'>
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-                <div>
+                <div className='mx-auto'>
                 <h1 className='text-center my-2 font-bold text-4xl'>Bar Chart</h1>
                 <BarChart
-                    width={500}
+                    width={400}
                     height={300}
                     data={data}
                     margin={{
@@ -34,9 +34,9 @@ const Charts = () => {
                         left: 20,
                         bottom: 5,
                     }}
-                    barSize={20}
+                    barSize={40}
                     >
-                    <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
+                    <XAxis dataKey="name" scale="point" padding={{ left: 15, right: 10 }} />
                     <YAxis />
                     <Tooltip />
                     <Legend />
@@ -48,7 +48,7 @@ const Charts = () => {
                     <h1 className='text-center my-2 font-bold text-4xl mt-10 md:mt-0'>Line Chart</h1>
                     
                     <LineChart
-                        width={500}
+                        width={400}
                         height={300}
                         data={data}
                         margin={{
@@ -70,7 +70,7 @@ const Charts = () => {
                 <div className=''>
                 <div className='justify-center flex flex-col'>
                     <h1 className='text-center my-2 font-bold text-4xl mt-10 md:mt-10 mb-7'>Percentage Remaining</h1>
-                    <div className='mx-auto flex justify-center' style={{ width: 300, height: 300 }}>
+                    <div className='mx-auto flex justify-center' style={{ width: 250, height: 250 }}>
                         <CircularProgressbar value={percentage} text={`${percentage}%`}
                             styles={buildStyles({
                                 pathColor: `rgba(0,255,0, ${percentage / 100})`,
