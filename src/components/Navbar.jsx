@@ -1,6 +1,7 @@
 import React, {Fragment} from 'react'
 //import {TiThMenuOutline} from 'react-icons/ti'
 //import {AiFillCloseCircle} from 'react-icons/ai'
+import Logo from '../assets/logo2.jpg'
 import {Menu, Transition} from '@headlessui/react'
 import {ChevronDownIcon} from '@heroicons/react/20/solid'
 
@@ -17,7 +18,8 @@ function classNames(...classes) {
     
   return (
     <div className='border-b border-gray-300 items-center h-20 max-w-[1240px] mx-auto px-4 flex justify-between text-black'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]' >LPG</h1>
+        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' >LPG<img className='w-[28px] justify-between' src={Logo} alt="/" /></h1>
+        
         <ul className='hidden md:flex pr-20'>
             <li className='p-4'>Home</li>
             <li className='p-4'>Charts</li>
@@ -137,7 +139,7 @@ function classNames(...classes) {
                                         <a
                                         href="#/1"
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-bold border-b-4'
                                         )}
                                         >
@@ -150,7 +152,7 @@ function classNames(...classes) {
                                         <a
                                         href="#/1"
                                         className={classNames(
-                                            active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                                            active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
                                             'block px-4 py-2 text-sm-bold'
                                         )}
                                         >
