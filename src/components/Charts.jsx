@@ -67,9 +67,10 @@ const Charts = () => {
                         
                     </LineChart>
                 </div>
+                <div className=''>
                 <div className='justify-center flex flex-col'>
                     <h1 className='text-center my-2 font-bold text-4xl mt-10 md:mt-10 mb-7'>Percentage Remaining</h1>
-                    <div className='ml-20 pl-10 items-center flex' style={{ width: 300, height: 300 }}>
+                    <div className='mx-auto flex justify-center' style={{ width: 300, height: 300 }}>
                         <CircularProgressbar value={percentage} text={`${percentage}%`}
                             styles={buildStyles({
                                 pathColor: `rgba(0,255,0, ${percentage / 100})`,
@@ -79,14 +80,15 @@ const Charts = () => {
                             })}
                         />;
                     </div>
-                    <div className='justify-center items-center flex'>
+                    </div>
+                    <div className='pl-20 ml-6 items-center flex'>
                         <p className='py-10 text-xl font-bold'> Approximate number of days remaining is: </p>
                         <Typed 
                             className='text-xl font-bold md:pl-4 pl-3' 
                                 strings={['100 days!','56 days!','12 days!']} 
                                 typeSpeed={100} 
                                 backSpeed={140} loop/>
-                </div>
+                    </div>
                 </div>
                 
             </div>    
