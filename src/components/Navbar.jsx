@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 //import {TiThMenuOutline} from 'react-icons/ti'
 //import {AiFillCloseCircle} from 'react-icons/ai'
-import Logo from '../assets/logo2.jpg'
+import Logo from '../assets/logo4.jpg'
 import {Menu, Transition} from '@headlessui/react'
 import {ChevronDownIcon} from '@heroicons/react/20/solid'
 
