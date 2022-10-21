@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Charts from './components/Charts';
 import Footer from './components/Footer';
 
+
 function App() {
   return (
     <div>
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <Charts/>
       <Footer/>
+      
     </div>
   );
 }

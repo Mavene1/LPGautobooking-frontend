@@ -31,18 +31,7 @@ const Charts = () => {
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
                 <div className='mx-auto'>
                 <h1 className='text-center my-2 font-bold text-4xl'>Bar Chart</h1>
-                <BarChart
-                    width={400}
-                    height={300}
-                    data={data}
-                    margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                    barSize={40}
-                    >
+                <BarChart width={400} height={300} data={data} margin={{top: 5, right: 30, left: 20, bottom: 5,}} barSize={40}>
                     <XAxis dataKey="name" scale="point" padding={{ left: 15, right: 10 }} />
                     <YAxis />
                     <Tooltip />
