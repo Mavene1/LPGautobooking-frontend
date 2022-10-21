@@ -81,7 +81,7 @@ const Charts = () => {
                         />;
                     </div>
                     </div>
-                    <div className='pl-20 ml-6 items-center flex'>
+                    <div className='mx-auto  items-center flex'>
                         <p className='py-10 text-xl font-bold'> Approximate number of days remaining is: </p>
                         <Typed 
                             className='text-xl font-bold md:pl-4 pl-3' 
