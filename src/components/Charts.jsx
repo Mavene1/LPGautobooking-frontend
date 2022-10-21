@@ -17,6 +17,13 @@ const Charts = () => {
         {name:"APR",value:75}
     ]
 
+    const data1=[
+        {name:"JAN",value:100},
+        {name:"FEB",value:80},
+        {name:"MAR",value:24},
+        {name:"APR",value:12}
+    ]
+
     const percentage = 66;
 
   return (
@@ -50,7 +57,7 @@ const Charts = () => {
                     <LineChart
                         width={400}
                         height={300}
-                        data={data}
+                        data={data1}
                         margin={{
                             top: 5,
                             right: 30,
