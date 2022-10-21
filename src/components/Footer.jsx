@@ -9,9 +9,9 @@ function Footer() {
             <h1 className='mt-3 flex w-full text-3xl font-bold text-[#00df9a]'>LPG<img className='w-[28px] justify-between' src={Logo} alt="/" /></h1>
             <p className='py-4'>Our solution aims to solve the problem of how to measure the remaining LPG cylinder levels and notifies the user when it is depleted; and allows the user to remotely book a new cylinder for door-delivery.</p>
             <div className='flex md:w-[75%] my-6 justify-between'>
+                <FaGithub size={30}/>
                 <FaDribbble size={30}/>
                 <FaFacebook size={30}/>
-                <FaGithub size={30}/>
                 <FaTwitter size={30}/>
                 <FaInstagram size={30}/>
             </div>
