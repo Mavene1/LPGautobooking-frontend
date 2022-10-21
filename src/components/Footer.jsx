@@ -93,7 +93,7 @@ function Footer() {
         
     </div>
         <div className="w-max-[1240px] mx-auto text-center p-6 bg-black">
-            <span className='text-white'>© 2021 Copyright: </span>
+            <span className='text-white'>© 2022 Copyright: </span>
             <a className="text-gray-400 font-bold" href="#1">LPG</a>
         </div>
     </div>

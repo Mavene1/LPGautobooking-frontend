@@ -19,11 +19,12 @@ function classNames(...classes) {
     
   return (
     <div className='border-b border-gray-300 items-center h-20 max-w-[1240px] mx-auto px-4 flex justify-between text-black'>
-        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' >LPG<img className='w-[28px] justify-between' src={Logo} alt="/" /></h1>
+        
+        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' >LPG<img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
         
         <ul className='hidden md:flex pr-20'>
-            <li className='p-4'>Home</li>
-            <li className='p-4'>Charts</li>
+            <li className='p-4 cursor-pointer hover:text-green-300' href='./Home' >Home</li>
+            <li className='p-4 cursor-pointer hover:text-green-300'>Charts</li>
             <li className='p-4'>
                 <Menu as="div" className="relative inline-block text-left">
                     <div>
@@ -134,14 +135,14 @@ function classNames(...classes) {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95">
                             <Menu.Items className="absolute left-[-50px] z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-200 shadow-lg  focus:outline-none">
-                            <div className="py-1">
+                            <div className="py-1 ">
                                 <Menu.Item>
                                     {({ active }) => (
                                         <a
                                         href="#/1"
                                         className={classNames(
                                             active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-bold border-b-4'
+                                            'block px-4 py-2 text-bold border-b-4 hover:text-green-300'
                                         )}
                                         >
                                         HOME
@@ -154,7 +155,7 @@ function classNames(...classes) {
                                         href="#/1"
                                         className={classNames(
                                             active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm-bold'
+                                            'block px-4 py-2 text-sm-bold hover:text-green-300'
                                         )}
                                         >
                                         CHARTS
