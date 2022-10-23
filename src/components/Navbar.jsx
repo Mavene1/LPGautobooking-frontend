@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import { Link} from 'react-scroll'
 //import {TiThMenuOutline} from 'react-icons/ti'
 //import {AiFillCloseCircle} from 'react-icons/ai'
 import Logo from '../assets/logo4.jpg'
@@ -23,12 +24,16 @@ function classNames(...classes) {
         <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' >LPG<img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
         
         <ul className='hidden md:flex pr-20'>
-            <li className='p-4 cursor-pointer hover:text-green-300' href='./Home' >Home</li>
-            <li className='p-4 cursor-pointer hover:text-green-300'>Charts</li>
+            <li className='p-4 cursor-pointer hover:text-green-300' >
+            <Link to="home" smooth={true} duration={500}>Home</Link>
+            </li>
+            <li className='p-4 cursor-pointer hover:text-green-300'>
+            <Link to="charts" smooth={true} duration={500}>Charts</Link>
+            </li>
             <li className='p-4'>
                 <Menu as="div" className="relative inline-block text-left">
                     <div>
-                        <Menu.Button className="inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+                        <Menu.Button className="hover:text-green-300 inline-flex w-full justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 ">
                         Members
                         <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                         </Menu.Button>
@@ -134,8 +139,9 @@ function classNames(...classes) {
                         leave="transition ease-in duration-75"
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95">
-                            <Menu.Items className="absolute left-[-50px] z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-200 shadow-lg  focus:outline-none">
+                            <Menu.Items className="absolute left-[-50px] z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-200 shadow-lg focus:outline-none">
                             <div className="py-1 ">
+                                <Link to="home" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
                                         <a
@@ -149,6 +155,8 @@ function classNames(...classes) {
                                         </a>
                                     )}
                                 </Menu.Item>
+                                </Link>
+                                <Link to="charts" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
                                         <a
@@ -162,6 +170,7 @@ function classNames(...classes) {
                                         </a>
                                     )}
                                 </Menu.Item>
+                                </Link>
                             </div>
                             </Menu.Items>
                     </Transition>

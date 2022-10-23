@@ -27,7 +27,7 @@ const Charts = () => {
     const percentage = 66;
 
   return (
-    <div className='w-full px-4 bg-[#a0a4a0] py-16'>
+    <div name='charts' className='w-full px-4 bg-[#a0a4a0] py-16'>
             <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
                 <div className='mx-auto'>
                 <h1 className='text-center my-2 font-bold text-4xl'>Bar Chart</h1>

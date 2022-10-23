@@ -5,7 +5,7 @@ import Logo from '../assets/image.jpg'
 function Footer() {
   return (
     <div>
-    <div className='bg-black w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white'>
+    <div name='footer' className='bg-black w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white'>
         <div>
             <h1 className='mt-3 flex w-full text-3xl font-bold text-[#00df9a]'>LPG<img className='w-[28px] justify-between' src={Logo} alt="/" /></h1>
             <p className='py-4'>Our solution aims to solve the problem of how to measure the remaining LPG cylinder levels and notifies the user when it is depleted; and allows the user to remotely book a new cylinder for door-delivery.</p>
@@ -66,7 +66,7 @@ function Footer() {
                     d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
                     </path>
                 </svg>
-                info@g.com
+                info@lpg.com
                 </p>
                 <p class="text-sm flex  justify-start mb-4">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
