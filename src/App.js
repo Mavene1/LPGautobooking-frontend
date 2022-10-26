@@ -12,7 +12,6 @@ function App() {
       <Hero/>
       <Charts/>
       <Footer/>
-      
     </div>
   );
 }
