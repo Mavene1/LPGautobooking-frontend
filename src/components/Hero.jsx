@@ -8,7 +8,7 @@ function Hero() {
   const handleOnClose=()=>setShowForm(false)
 
   return (
-    <div name='home' className='text-black'>
+    <div name='hero' className='text-black'>
         <div className='max-w-[1240px] grid md:grid-cols-2 pt-0 w-full h-screen mx-auto'>
             <img className='justify-center w-[300px] md:w-[500px] mx-auto my-2' src={lpg} alt="/" />
             <div className='md:pt-20 flex flex-col'>

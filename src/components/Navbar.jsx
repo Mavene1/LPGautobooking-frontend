@@ -1,24 +1,19 @@
-import React, {Fragment, useState} from 'react'
-import { Link} from 'react-scroll'
+import React, {Fragment} from 'react'
+import {Link} from 'react-scroll'
+import { Link as Lin} from 'react-router-dom'
 //import {TiThMenuOutline} from 'react-icons/ti'
 //import {AiFillCloseCircle} from 'react-icons/ai'
 import Logo from '../assets/logo4.jpg'
 import {Menu, Transition} from '@headlessui/react'
 //import {ChevronDownIcon} from '@heroicons/react/20/solid'
 //import PropaneTankIcon from '@mui/icons-material/PropaneTank';
-import Login from './Login'
-import Signup from './Signup'
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
 
-   function Navbar() {
-    const [showLogin, setShowLogin] = useState(false)
-    const handleOnClose=()=>setShowLogin(false)
-
-    const [showSignup, setShowSignup] = useState(false)
-    const honClose=()=>setShowSignup(false)
+  function Navbar() {
 //     const [nav,setNav] = useState(true)
 
 //     const handleNav = ()=> {
@@ -28,19 +23,19 @@ function classNames(...classes) {
   return (
     <div className='border-b border-gray-300 items-center h-20 max-w-[1240px] mx-auto px-4 flex justify-between text-black'>
         
-        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' >LPG<img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
+        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' ><Lin to='/'>LPG</Lin><img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
         
         <ul className='hidden md:flex'>
             <li className='p-4 cursor-pointer hover:text-green-300' >
-            <Link to="home" smooth={true} duration={500}>Home</Link>
+            <Link to="hero" smooth={true} duration={500}>Home</Link>
             </li>
             <li className='p-4 cursor-pointer hover:text-green-300'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
             </li>
             <li className='p-4 cursor-pointer hover:text-green-300'>
-            <button onClick={()=>setShowLogin(true)} className='bg-green-400 hover:bg-green-600 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-black'>LogIn</button></li>
+            <Lin to='/login1'><button  className='bg-green-400 hover:bg-green-600 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-black'>LogIn</button></Lin></li>
             <li className='py-4 px-3 cursor-pointer hover:text-green-300'>
-            <button onClick={()=>setShowSignup(true)} className='bg-gray-600 hover:bg-gray-900 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-white'>SignUp</button></li>
+            <Lin to='/signup1'><button  className='bg-gray-600 hover:bg-gray-900 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-white'>SignUp</button></Lin></li>
             
             {/* <li className='p-4'>
                 <Menu as="div" className="relative inline-block text-left">
@@ -153,36 +148,34 @@ function classNames(...classes) {
                         leaveTo="transform opacity-0 scale-95">
                             <Menu.Items className="absolute left-[-50px] z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-200 shadow-lg focus:outline-none">
                             <div className="py-1 ">
-                                <Link to="home" smooth={true} duration={500}>
+                                <Link to="hero" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <a
-                                        href="#/1"
-                                        className={classNames(
-                                            active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-bold border-b-4 hover:text-green-300'
-                                        )}
-                                        >
-                                        HOME
-                                        </a>
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>HOME</a>
                                     )}
                                 </Menu.Item>
                                 </Link>
                                 <Link to="charts" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <a
-                                        href="#/1"
-                                        className={classNames(
-                                            active ? 'bg-gray-400 text-gray-900' : 'text-gray-700',
-                                            'block px-4 py-2 text-sm-bold hover:text-green-300'
-                                        )}
-                                        >
-                                        CHARTS
-                                        </a>
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-sm-bold hover:text-green-300')}>CHARTS</a>
                                     )}
                                 </Menu.Item>
                                 </Link>
+                                <Lin to="/login1" smooth={true} duration={500}>
+                                <Menu.Item>
+                                    {({ active }) => (
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>LogIn</a>
+                                    )}
+                                </Menu.Item>
+                                </Lin>
+                                <Lin to="/signup1" smooth={true} duration={500}>
+                                <Menu.Item>
+                                    {({ active }) => (
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>SignUp</a>
+                                    )}
+                                </Menu.Item>
+                                </Lin>
                             </div>
                             </Menu.Items>
                     </Transition>
@@ -199,8 +192,7 @@ function classNames(...classes) {
                 <li className='p-4'>Charts</li>
             </ul>
         </div> */}
-    <Login onClose={handleOnClose} visible={showLogin}/>
-    <Signup onClose={honClose} visible={showSignup}/>
+    
     </div>
     
   )

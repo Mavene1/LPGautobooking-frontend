@@ -1,22 +1,20 @@
 import React from 'react'
 import {FcGoogle} from 'react-icons/fc'
 import {AiFillFacebook} from 'react-icons/ai'
-import { Link} from 'react-scroll'
+import loginImg from '../assets/trees.jpg'
+import { Link } from 'react-router-dom'
 
-function Signup({visible, onClose}) {
-    if (!visible) return null;
-
-    const honClose=(e)=>{
-        if (e.target.id==="container")onClose()
-    }
-
+export default function Signup1() {
   return (
-    <div name='Signup' id='container' onClick={honClose} className='fixed inset-0 bg-black bg-opacity-20 backdrop-blur-sm flex justify-center items-center'>
-        <div className='bg-white px-4 py-2 rounded w-150 md:w-[400px]'>
+    <div className='relative w-full h-screen bg-zinc-900/90'>
+        <img className='absolute w-full h-full object-cover mix-blend-overlay' src={loginImg} alt="/" />
+    
+    <div className='flex justify-center items-center h-full'>
+    <div className='bg-white px-4 py-2 rounded-md w-[350px] md:w-[400px]'>
         <h2 className='text-4xl font-bold text-center py-4'>LPG</h2>
             <div className='flex justify-between py-5'>
-                <p className='border shadow-lg hover:shadow-xl px-6 py-2 relative flex items-center'><AiFillFacebook className='mr-2' /> Facebook</p>
-                <p className='border shadow-lg hover:shadow-xl px-6 py-2 relative flex items-center'><FcGoogle className='mr-2' /> Google</p>
+                <p className='border shadow-lg hover:shadow-xl px-6 py-2 relative flex items-center rounded-full'><AiFillFacebook className='mr-2' /> Facebook</p>
+                <p className='border shadow-lg hover:shadow-xl px-6 py-2 relative flex items-center rounded-full'><FcGoogle className='mr-2' /> Google</p>
             </div>
             <div className='flex flex-col mb-2'>
                 <label>Email</label>
@@ -34,12 +32,11 @@ function Signup({visible, onClose}) {
                 <label>Confirm Password</label>
                 <input className='border relative bg-gray-100 p-[5px]' type="password" />
             </div>
-            <button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white'>Sign Up</button>
+            <button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button>
             <p className='flex items-center mt-2'><input className='mr-2' type="checkbox"  />Remember Me</p>
-            <p className='text-center mt-5'>Already a member?<Link to="Login" smooth={true} duration={500} className='p-2 cursor-pointer hover:text-green-300 underline'>Log In</Link>now</p>
+            <p className='text-center mt-5'>Already a member?<Link to="login1" smooth={true} duration={500} className='p-2 cursor-pointer hover:text-green-300 underline'>Log In</Link>now</p>
         </div>
+    </div>
     </div>
   )
 }
-
-export default Signup
