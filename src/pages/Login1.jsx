@@ -25,8 +25,10 @@ export default function Login1() {
                     <input className='border relative bg-gray-100 p-[4px]' type="password" />
                 </div>
                 <button className='w-full py-2 mt-8 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Log In</button>
-                <p className='flex items-center mt-2'><input className='mr-2' type="checkbox"  />Remember Me</p>
-                <p className='text-center mt-8'>Not a member?<Link to='/signup1' className='p-2 cursor-pointer hover:text-green-300 underline'>SignUp</Link>now</p>
+                <div>
+                    <p className='flex items-center mt-2'><input className='mr-2' type="checkbox"  />Remember Me</p>
+                    <p className='text-center mt-8'>Not a member?<Link to='/signup1' className='p-2 cursor-pointer hover:text-green-300 underline'>SignUp</Link>now</p>
+                </div>
             </div>
         </div>
     </div>
