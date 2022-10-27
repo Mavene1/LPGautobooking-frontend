@@ -27,7 +27,7 @@ function classNames(...classes) {
         
         <ul className='hidden md:flex'>
             <li className='p-4 cursor-pointer hover:text-green-300' >
-            <Link to="hero" smooth={true} duration={500}>Home</Link>
+            <Lin to="/" smooth={true} duration={500}>Home</Lin>
             </li>
             <li className='p-4 cursor-pointer hover:text-green-300'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
@@ -148,13 +148,13 @@ function classNames(...classes) {
                         leaveTo="transform opacity-0 scale-95">
                             <Menu.Items className="absolute left-[-50px] z-10 mt-2 w-56 origin-top-right rounded-md bg-gray-200 shadow-lg focus:outline-none">
                             <div className="py-1 ">
-                                <Link to="hero" smooth={true} duration={500}>
+                                <Lin to="/" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
                                         <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>HOME</a>
                                     )}
                                 </Menu.Item>
-                                </Link>
+                                </Lin>
                                 <Link to="charts" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
