@@ -30,7 +30,7 @@ const Completed = () => {
 
   const element = data.map((data2) => {
     return (
-      <div className="grid grid-cols-3 md:grid-cols-5 gap-8 pl-2 pt-2 border-b w-full items-center justify-between">
+      <div className="grid grid-cols-3 md:grid-cols-5 gap-8 pl-2 py-2 border-b w-full items-center justify-between">
         <p className="p-1">{data2.name}</p>
         <p className="p-1">{data2.phone}</p>
         <p className="p-1 hidden md:flex">{data2.brand}</p>

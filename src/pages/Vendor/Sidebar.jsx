@@ -2,6 +2,7 @@ import { useState } from "react";
 import Dashboard from "./Dashboard";
 import Completed from "./Completed";
 import Pending from "./Pending";
+import {Link} from 'react-router-dom'
 
 
 export default function Sidebar() {
@@ -138,7 +139,7 @@ export default function Sidebar() {
                     />
                   </svg>
                   <span className="text-gray-100 hover:text-gray-300 cursor-pointer">
-                    Logout
+                  <Link to='/login1'>Logout</Link>
                   </span>
                 </a>
               </li>
@@ -149,7 +150,6 @@ export default function Sidebar() {
       {display === "dashboard" && <Dashboard />}
       {display === "completed" && <Completed />}
       {display === "pending" && <Pending />}
-      
     </div>
   );
 }
