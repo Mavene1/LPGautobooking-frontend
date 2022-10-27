@@ -9,7 +9,6 @@ export default function Login1() {
     <div className='relative w-full h-screen bg-zinc-900/90'>
         <img className='absolute w-full h-full object-cover mix-blend-overlay' src={loginImg} alt="/" />
     
-
         <div className='flex justify-center items-center h-full'>
             <div className='bg-white p-4 rounded-md w-[350px] md:w-[400px]'>
             <h2 className='text-4xl font-bold text-center py-4'>LPG</h2>

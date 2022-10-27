@@ -27,7 +27,7 @@ function classNames(...classes) {
         
         <ul className='hidden md:flex'>
             <li className='p-4 cursor-pointer hover:text-green-300' >
-            <Lin to="/" smooth={true} duration={500}>Home</Lin>
+            <Link to="hero" smooth={true} duration={500}>Home</Link>
             </li>
             <li className='p-4 cursor-pointer hover:text-green-300'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
@@ -165,14 +165,14 @@ function classNames(...classes) {
                                 <Lin to="/login1" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>LogIn</a>
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>LOGIN</a>
                                     )}
                                 </Menu.Item>
                                 </Lin>
                                 <Lin to="/signup1" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>SignUp</a>
+                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>SIGNUP</a>
                                     )}
                                 </Menu.Item>
                                 </Lin>
