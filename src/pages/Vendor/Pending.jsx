@@ -46,13 +46,13 @@ const Pending = () => {
         <p className="p-1">{data1.capacity}</p>
           <button  
             type="button"
-            className="ml-14 md:w-[100px] mb-3 inline-block px-3 md:px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
+            className="ml-14 md:w-[100px] mb-1 inline-block px-3 md:px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
           >
             ACCEPT
           </button>
           <button
             type="button"
-            className="ml-16 md:w-[100px] mb-3 inline-block px-3 md:px-6 py-2.5 bg-gray-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
+            className="ml-16 md:w-[100px] mb-1 inline-block px-3 md:px-6 py-2.5 bg-gray-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
           >
             DECLINE
           </button>
@@ -63,10 +63,10 @@ const Pending = () => {
     return (
       <div class=" m-4 md:hidden grid grid-cols-1 gap-4">
       <div class="bg-gray-200 space-y-3 p-2 rounded-lg shadow">
-      <div class="items-center text-sm grid grid-cols-5 py-0 m-2">
+      <div class="items-center text-sm grid grid-cols-5 py-2 m-2">
         <div><p className="p-1 text-green-500 font-bold hover:underline">{data2.name}</p></div>
-        <div><p className="p-1 ml-2 pr-3">{data2.phone}</p></div>
-        <div><p className="p-1 hidden sm:hidden">{data2.brand}</p></div>
+        <div><p className="p-1 ml-2">{data2.phone}</p></div>
+        <div><p className="p-1 pl-2 hidden sm:hidden">{data2.brand}</p></div>
         <div><p className="p-1">{data2.location}</p></div>
         <div><p className="p-1">{data2.capacity}</p></div>
         <div className="flex mt-2 "><button
