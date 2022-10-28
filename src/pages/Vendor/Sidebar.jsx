@@ -61,7 +61,7 @@ export default function Sidebar() {
                       d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                     />
                   </svg>
-                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer">
+                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
                     Dashboard
                   </span>
                 </a>
@@ -86,7 +86,7 @@ export default function Sidebar() {
                       d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                     />
                   </svg>
-                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer">
+                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
                     Pending Orders
                   </span>
                 </a>
@@ -114,7 +114,7 @@ export default function Sidebar() {
                       d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
                     />
                   </svg>
-                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer">
+                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
                     Completed Orders
                   </span>
                 </a>
@@ -138,7 +138,7 @@ export default function Sidebar() {
                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                     />
                   </svg>
-                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer">
+                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
                   <Link to='/login1'>Logout</Link>
                   </span>
                 </a>

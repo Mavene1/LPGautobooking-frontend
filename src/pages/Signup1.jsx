@@ -35,7 +35,7 @@ export default function Signup1() {
             </div>
             <Link to='/'><button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button></Link>
             <Checkbox label="Remember Me" color="green"/>
-            <p className='text-center mt-5'>Already a member?<Link to="login1" smooth={true} duration={500} className='p-2 cursor-pointer hover:text-green-300 underline'>Log In</Link>now</p>
+            <p className='text-center mt-5'>Already a member?<Link to='/login1' className='p-2 cursor-pointer hover:text-green-300 underline'>Log In</Link>now</p>
         </div>
     </div>
     </div>
