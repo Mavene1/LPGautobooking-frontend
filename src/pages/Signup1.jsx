@@ -3,6 +3,7 @@ import {FcGoogle} from 'react-icons/fc'
 import {AiFillFacebook} from 'react-icons/ai'
 import loginImg from '../assets/trees.jpg'
 import { Link } from 'react-router-dom'
+import { Checkbox } from "@material-tailwind/react";
 
 export default function Signup1() {
   return (
@@ -32,8 +33,8 @@ export default function Signup1() {
                 <label>Confirm Password</label>
                 <input className='border relative bg-gray-100 p-[4px]' type="password" />
             </div>
-            <button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button>
-            <p className='flex items-center mt-2'><input className='mr-2' type="checkbox"  />Remember Me</p>
+            <Link to='/'><button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button></Link>
+            <Checkbox label="Remember Me" color="green"/>
             <p className='text-center mt-5'>Already a member?<Link to="login1" smooth={true} duration={500} className='p-2 cursor-pointer hover:text-green-300 underline'>Log In</Link>now</p>
         </div>
     </div>
