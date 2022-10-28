@@ -25,11 +25,12 @@ export default function Login1() {
                     <label>Password</label>
                     <input className='border relative bg-gray-100 p-[4px]' type="password" />
                 </div>
-                <Link to='/'><button className='w-full py-2 mt-8 mb-4 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Log In</button></Link>
+                <Link to='/'><button className='w-full py-2 mt-6 mb-2 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Log In</button></Link>
                 <div>
-                    <Checkbox label="Remember Me" color="green"/>
-                    <p className='text-center mt-4'>Not a member?<Link to='/signup1' className='p-2 cursor-pointer hover:text-green-300 underline'>SignUp</Link>now</p>
-                </div>
+                    <Checkbox label="Remember Me" className='mt-0'/>
+                    <div className='flex items-center justify-between'>
+                        <p className='ml-[117px]'>Not a Member? Then</p><Link to='/signup1'><button className='w-[60px] mt-0 py-1 relative text-black rounded-full bg-white underline'>Sign Up!</button></Link>
+                </div></div>
             </div>
         </div>
     </div>
