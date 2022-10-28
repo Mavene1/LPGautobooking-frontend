@@ -34,7 +34,7 @@ function classNames(...classes) {
             </li>
             
             <li className='py-4 px-3 cursor-pointer hover:text-green-300'>
-            <Lin to='/login1'><button  className='bg-gray-600 hover:bg-gray-900 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-white'>Logout</button></Lin></li>
+            <Lin to='/'><button  className='bg-gray-600 hover:bg-gray-900 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-white'>Logout</button></Lin></li>
             
             {/* <li className='p-4'>
                 <Menu as="div" className="relative inline-block text-left">
@@ -162,7 +162,7 @@ function classNames(...classes) {
                                 </Menu.Item>
                                 </Link>
                                 
-                                <Lin to="/login1" smooth={true} duration={500}>
+                                <Lin to="/" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
                                         <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>Logout</a>

@@ -33,10 +33,10 @@ export default function Signup1() {
                 <label>Confirm Password</label>
                 <input className='border relative bg-gray-100 p-[4px]' type="password" />
             </div>
-            <Link to='/'><button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button></Link>
+            <Link to='/vendor'><button className='w-full py-2 mt-5 bg-green-600 hover:bg-green-500 relative text-white rounded-full'>Sign Up</button></Link>
             <Checkbox label="Remember Me" color="green"/>
             <div className='flex items-center justify-between'>
-                        <p className='ml-[120px]'>Not a Member?  Then</p><Link to='/login1'><button className='w-[60px] py-1 relative text-black rounded-full bg-white underline'>Log In!</button></Link>
+                        <p className='ml-[120px] md:ml-[170px]'>Not a Member?  Then</p><Link to='/'><button className='w-[60px] py-1 relative text-black rounded-full bg-white underline'>Log In!</button></Link>
                 </div>
         </div>
     </div>

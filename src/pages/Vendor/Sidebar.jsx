@@ -139,7 +139,7 @@ export default function Sidebar() {
                     />
                   </svg>
                   <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
-                  <Link to='/login1'>Logout</Link>
+                  <Link to='/'>Logout</Link>
                   </span>
                 </a>
               </li>
