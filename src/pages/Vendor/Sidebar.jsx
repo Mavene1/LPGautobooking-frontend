@@ -45,7 +45,7 @@ export default function Sidebar() {
               >
                 <a
                   href="#1"
-                  className="flex items-center p-2 space-x-3 rounded-md"
+                  className="flex items-center p-2 space-x-3 rounded-sm border-t"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function Sidebar() {
               <li className="rounded-sm" onClick={() => setDisplay("pending")}>
                 <a
                   href="#1"
-                  className="flex items-center p-2 space-x-3 rounded-md"
+                  className="flex items-center p-2 space-x-3 rounded-sm border-t border-b"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Sidebar() {
               >
                 <a
                   href="#1"
-                  className="flex items-center p-2 space-x-3 rounded-md"
+                  className="flex items-center p-2 space-x-3 rounded-sm border-b"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,10 +119,10 @@ export default function Sidebar() {
                   </span>
                 </a>
               </li>
-              <li className="rounded-sm">
+              <li className= "rounded-sm" >
                 <a
                   href="#1"
-                  className="flex items-center p-2 space-x-3 rounded-md"
+                  className="flex items-center p-2 space-x-3 rounded-sm mt-[360px] border-t" 
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
