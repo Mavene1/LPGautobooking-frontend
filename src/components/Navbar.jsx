@@ -3,10 +3,10 @@ import {Link} from 'react-scroll'
 import { Link as Lin} from 'react-router-dom'
 //import {TiThMenuOutline} from 'react-icons/ti'
 //import {AiFillCloseCircle} from 'react-icons/ai'
-import Logo from '../assets/logo4.jpg'
+//import Logo from '../assets/logo4.jpg'
 import {Menu, Transition} from '@headlessui/react'
 //import {ChevronDownIcon} from '@heroicons/react/20/solid'
-//import PropaneTankIcon from '@mui/icons-material/PropaneTank';
+import PropaneTankIcon from '@mui/icons-material/PropaneTank';
 
 
 function classNames(...classes) {
@@ -21,15 +21,15 @@ function classNames(...classes) {
 //     }
     
   return (
-    <div className='border-b border-gray-300 items-center h-20 max-w-[1240px] mx-auto px-4 flex justify-between text-black'>
+    <div className='border-b border-gray-300 bg-gray-200 items-center h-20 w-full mx-auto px-4 flex justify-between text-black'>
         
-        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] mt-4' ><Lin to='/'>LPG</Lin><img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
+        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] my-4' ><Lin to='/home'>LPG<PropaneTankIcon className='mt-[-5px]'/></Lin></h1>
         
         <ul className='hidden md:flex'>
-            <li className='p-4 cursor-pointer hover:text-green-300' >
+            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-300' >
             <Link to="hero" smooth={true} duration={500}>Home</Link>
             </li>
-            <li className='p-4 cursor-pointer hover:text-green-300'>
+            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-300'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
             </li>
             
@@ -134,7 +134,7 @@ function classNames(...classes) {
         <li className='p-4 block md:hidden'>
                 
                 <Menu as="div" className="relative inline-block text-left">
-                <Menu.Button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-200 rounded-lg hover:bg-gray-400 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+                <Menu.Button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-gray-300 rounded-lg hover:bg-gray-400 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
                 </Menu.Button>
                     <Transition 

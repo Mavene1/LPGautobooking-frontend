@@ -1,14 +1,14 @@
 import React from 'react'
 import {FaDribbble, FaFacebook, FaGithub, FaTwitter, FaInstagram} from 'react-icons/fa'
-import Logo from '../assets/image.jpg'
-
+//import Logo from '../assets/image.jpg'
+import PropaneTankIcon from '@mui/icons-material/PropaneTank';
 
 function Footer() {
   return (
     <div>
     <div name='footer' className='bg-black w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white'>
         <div>
-            <h1 className='mt-3 flex w-full text-3xl font-bold text-[#00df9a]'>LPG<img className='w-[28px] cursor-pointer justify-between' src={Logo} alt="/" /></h1>
+            <h1 className='my-2 flex w-full text-3xl font-bold text-[#00df9a]'>LPG<PropaneTankIcon className='mt-[6px]'/></h1>
             <p className='py-4'>Our solution aims to solve the problem of how to measure the remaining LPG cylinder levels and notifies the user when it is depleted; and allows the user to remotely book a new cylinder for door-delivery.</p>
             <div className='flex md:w-[75%] my-6 justify-between'>
                 <FaGithub size={30}/>
