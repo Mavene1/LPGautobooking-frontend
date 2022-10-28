@@ -32,9 +32,11 @@ let data = [
   },
 ];
 
+
+
 const Pending = () => {
   
-  
+  // const [show, setShow] = useState(false);
   const element = data.map((data1) => {
     return (
       <div className="hidden md:block">
@@ -44,12 +46,15 @@ const Pending = () => {
         <p className="p-1">{data1.brand}</p>
         <p className="p-1">{data1.location}</p>
         <p className="p-1">{data1.capacity}</p>
+          <div>
+          {/* {show && <p>Accepted!</p>} */}
           <button  
             type="button"
+            
             className="ml-14 md:w-[100px] mb-1 inline-block px-3 md:px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
-          >
-            ACCEPT
-          </button>
+          > ACCEPT
+            {/* {show===true ? <p>Accepted!</p>:'ACCEPT'} */}
+          </button></div>
           <button
             type="button"
             className="ml-16 md:w-[100px] mb-1 inline-block px-3 md:px-6 py-2.5 bg-gray-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-600 hover:shadow-lg focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
@@ -69,7 +74,8 @@ const Pending = () => {
         <div><p className="p-1 pl-2 hidden sm:hidden">{data2.brand}</p></div>
         <div><p className="p-1">{data2.location}</p></div>
         <div><p className="p-1">{data2.capacity}</p></div>
-        <div className="flex mt-2 "><button
+        <div className="flex mt-2 ">
+          <button
             type="button"
             className="ml-1 md:w-[100px] mb-3 inline-block px-3 md:px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
           >
