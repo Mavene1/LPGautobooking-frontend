@@ -5,9 +5,9 @@ const Dashboard = () => {
     <div className="flex ">
       
       <div className="container mx-auto mt-8">
-      <h1 class="text-xl mb-6 ml-6 px-14 font-bold mx-auto">Dashboard</h1>
-        <div className="ml-20 grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3">
-          <div className="w-full px-14 py-10 md:px-20 md:py-18 bg-gray-200 rounded-lg shadow">
+      <h1 class="text-xl mb-6 ml-10 font-bold mx-auto">Dashboard</h1>
+        <div className="ml-10 grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3">
+          <div className="w-full px-14 py-10 md:px-28 md:py-25 bg-gray-200 rounded-lg shadow">
             <div className="text-md mb-4 text-center font-medium text-gray-500 truncate">
               Total orders
             </div>

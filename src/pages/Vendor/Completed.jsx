@@ -55,7 +55,7 @@ const Completed = () => {
     return (
         <div className="w-full p-5 h-screen bg-gray-100">
           <h1 class="text-xl mb-2 ml-4 font-bold md:mx-auto">Completed Orders</h1>
-          <div className="bg-gray-300 border-b-2 border-gray-400 hidden md:block">
+          <div className="bg-gray-300 border-b-2 border-gray-400 hidden md:block rounded-lg shadow">
           <ul className="grid md:grid-cols-5 gap-8 pl-2 w-full p-3 text-sm font-semibold tracking-wide text-left">
             <li className="p-1">
               Name
