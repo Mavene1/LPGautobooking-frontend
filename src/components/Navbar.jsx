@@ -21,15 +21,15 @@ function classNames(...classes) {
 //     }
     
   return (
-    <div className='border-b border-gray-300 bg-gray-200 items-center h-20 w-full mx-auto px-4 flex justify-between text-black'>
+    <div className='border-b border-gray-300 bg-green-100 items-center h-20 w-full mx-auto px-4 flex justify-between text-black'>
         
-        <h1 className='flex w-full text-3xl font-bold text-[#00df9a] my-4' ><Lin to='/home'>LPG<PropaneTankIcon className='mt-[-5px]'/></Lin></h1>
+        <h1 className='flex w-full text-3xl font-bold text-green-700 my-4' ><Lin to='/home'>LPG<PropaneTankIcon className='mt-[-5px]'/></Lin></h1>
         
         <ul className='hidden md:flex'>
-            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-300' >
+            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-600' >
             <Link to="hero" smooth={true} duration={500}>Home</Link>
             </li>
-            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-300'>
+            <li className='p-4 mt-[5px] cursor-pointer hover:text-green-600'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
             </li>
             
