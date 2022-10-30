@@ -19,7 +19,7 @@ function Form({visible, onClose}) {
 
         <div className='flex items-center '>
             <label for="number" class="block text-xl font-medium text-gray-700">Card-No: </label>
-            <div class="relative mt-2 rounded-md shadow-sm">
+            <div class="relative mt-2 rounded-md">
                 {/* <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                 <span class="text-gray-500 sm:text-sm">$</span>
                 </div> */}
@@ -28,19 +28,19 @@ function Form({visible, onClose}) {
             </div>
             <div className='flex items-center justify-start'>
                 <label for="number" class="block text-xl font-medium text-gray-700">Location: </label>
-                <div class="relative mt-2 rounded-md shadow-sm">                  
+                <div class="relative mt-2 rounded-md">                  
                     <input type="text" name="cardnumber" id="number" className="mb-4 p-1 block w-full rounded-md border-2  sm:text-sm" placeholder="********"/>                   
                 </div>
             </div>
             <div className='flex items-center justify-start'>
                 <label for="number" class="block text-xl font-medium text-gray-700">Dealer: </label>
-                <div class="relative mt-2 rounded-md shadow-sm">                   
+                <div class="relative mt-2 rounded-md">                   
                     <input type="text" name="cardnumber" id="number" className="mb-4 p-1 block w-full rounded-md border-2  sm:text-sm pr-[20px]" placeholder="********"/>                    
                 </div>
             </div>
             <div className='flex items-center justify-start'>
                 <label for="number" class="block text-xl font-medium text-gray-700">Weight: </label>
-                <div class="relative mt-2 rounded-md shadow-sm">                   
+                <div class="relative mt-2 rounded-md">                   
                     <input type="text" name="cardnumber" id="number" className="mb-4 p-1 block w-full rounded-md border-2  sm:text-sm pr-[18px]" placeholder="**"/>                 
                 </div>
             </div>
