@@ -2,10 +2,10 @@ import { useState } from "react";
 import Dashboard from "./Dashboard";
 import Completed from "./Completed";
 import Pending from "./Pending";
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
+import PropTypes from "prop-types";
 
-
-export default function Sidebar() {
+export default function Sidebar({setToken}) {
   const [open, setOpen] = useState(false);
   const [display, setDisplay] = useState("dashboard");
   //console.log(display);
@@ -18,7 +18,7 @@ export default function Sidebar() {
       >
         <div className="space-y-3">
           <div className="flex items-center justify-between">
-            <h2 className="text-xl pl-4 font-bold text-white">LPG</h2>
+            <h2 className="text-xl pl-4 font-bold text-white">Digi Cylinders</h2>
             <button onClick={() => setOpen(!open)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -138,8 +138,8 @@ export default function Sidebar() {
                       d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                     />
                   </svg>
-                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out">
-                  <Link to='/'>Logout</Link>
+                  <span className="text-gray-100 hover:text-gray-300 cursor-pointer focus:bg-gray-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-700 active:shadow-lg transition duration-150 ease-in-out" onClick={()=>setToken(null)}>
+                  Logout
                   </span>
                 </a>
               </li>
@@ -153,3 +153,5 @@ export default function Sidebar() {
     </div>
   );
 }
+Sidebar.propTypes = {
+  setToken: PropTypes.func.isRequired,}

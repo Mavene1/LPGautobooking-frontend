@@ -8,6 +8,7 @@ let data = [
     brand: "M-gas",
     location: "Nai",
     capacity: "13kg",
+    status:"Accepted",
   },
   {
     name: "Mavene",
@@ -15,6 +16,7 @@ let data = [
     brand: "Midgas",
     location: "Nai",
     capacity: "6kg",
+    status:"Accepted",
   },
   {
     name: "Collins",
@@ -22,6 +24,7 @@ let data = [
     brand: "Pro",
     location: "Kisumu",
     capacity: "13kg",
+    status:"Accepted",
   },
   {
     name: "Risper",
@@ -29,6 +32,7 @@ let data = [
     brand: "Total",
     location: "Nakuru",
     capacity: "6kg",
+    status:"Accepted",
   },
 ];
 
@@ -36,9 +40,10 @@ let data = [
 
 const Pending = () => {
   
-  // const [show, setShow] = useState(false);
+  //const [show, setShow] = useState(false);
   const element = data.map((data1) => {
     return (
+      
       <div className="hidden md:block">
       <div className="grid md:grid-cols-7 gap-6 overflow-auto rounded-lg shadow p-2 text-sm tracking-wide text-left text-gray-700 whitespace-nowrap bg-gray-200 my-1">
         <p className="p-1 font-bold text-green-500 hover:underline">{data1.name}</p>
@@ -53,7 +58,7 @@ const Pending = () => {
             
             className="ml-14 md:w-[100px] mb-1 inline-block px-3 md:px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 "
           > ACCEPT
-            {/* {show===true ? <p>Accepted!</p>:'ACCEPT'} */}
+            {/* {show===true ? 'DECLINE':'ACCEPT'} */}
           </button></div>
           <button
             type="button"
@@ -66,6 +71,7 @@ const Pending = () => {
   });
   const element2 = data.map((data2) => {
     return (
+      
       <div class=" m-4 md:hidden grid grid-cols-1 gap-4">
       <div class="bg-gray-200 space-y-3 p-2 rounded-lg shadow">
       <div class="items-center text-sm grid grid-cols-5 py-2 m-2">
@@ -74,6 +80,7 @@ const Pending = () => {
         <div><p className="p-1 pl-2 hidden sm:hidden">{data2.brand}</p></div>
         <div><p className="p-1">{data2.location}</p></div>
         <div><p className="p-1">{data2.capacity}</p></div>
+        
         <div className="flex mt-2 ">
           <button
             type="button"
@@ -106,7 +113,7 @@ const Pending = () => {
               </li>
               <li className="p-1">
                 Location
-              </li >
+              </li>
               <li className="p-1">
                 Capacity
               </li>

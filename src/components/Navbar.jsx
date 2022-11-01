@@ -7,13 +7,13 @@ import { Link as Lin} from 'react-router-dom'
 import {Menu, Transition} from '@headlessui/react'
 //import {ChevronDownIcon} from '@heroicons/react/20/solid'
 import PropaneTankIcon from '@mui/icons-material/PropaneTank';
-
+import PropTypes from "prop-types";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
 
-  function Navbar() {
+  function Navbar({setToken}) {
 //     const [nav,setNav] = useState(true)
 
 //     const handleNav = ()=> {
@@ -23,7 +23,7 @@ function classNames(...classes) {
   return (
     <div className='border-b border-gray-300 bg-green-100 items-center h-20 w-full mx-auto px-4 flex justify-between text-black'>
         
-        <h1 className='flex w-full text-3xl font-bold text-green-700 my-4' ><Lin to='/home'>LPG<PropaneTankIcon className='mt-[-5px]'/></Lin></h1>
+        <h1 className='flex w-full text-3xl font-bold text-green-700 my-4' ><Lin to='/home'><PropaneTankIcon className='mt-[-5px] w-[10px]'/>Digi Cylinders</Lin></h1>
         
         <ul className='hidden md:flex'>
             <li className='p-4 mt-[5px] cursor-pointer hover:text-green-600' >
@@ -32,10 +32,9 @@ function classNames(...classes) {
             <li className='p-4 mt-[5px] cursor-pointer hover:text-green-600'>
             <Link to="charts" smooth={true} duration={500}>Charts</Link>
             </li>
-            
-            <li className='py-4 px-3 cursor-pointer hover:text-green-300'>
-            <Lin to='/'><button  className='bg-gray-600 hover:bg-gray-900 hover:shadow-lg px-3 py-1 rounded cursor-pointer text-white'>Logout</button></Lin></li>
-            
+            <div className='pt-[15px] pl-2'>
+            <button  className='bg-gray-600 uppercase hover:bg-gray-900 hover:shadow-lg px-3 py-[3px] rounded cursor-pointer text-white' onClick={()=>setToken(null)}>Logout</button>
+            </div>
             {/* <li className='p-4'>
                 <Menu as="div" className="relative inline-block text-left">
                     <div>
@@ -165,7 +164,7 @@ function classNames(...classes) {
                                 <Lin to="/" smooth={true} duration={500}>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <a href="#/1" className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300')}>Logout</a>
+                                        <div className={classNames( active ? 'bg-gray-400 text-gray-900' : 'text-gray-700','block px-4 py-2 text-bold border-b-4 hover:text-green-300' )} onClick={()=>setToken(null)} >LOGOUT</div>
                                     )}
                                 </Menu.Item>
                                 </Lin>
@@ -191,4 +190,8 @@ function classNames(...classes) {
   )
 }
 
+Navbar.propTypes = {
+    setToken: PropTypes.func.isRequired,
+   
+  };
 export default Navbar

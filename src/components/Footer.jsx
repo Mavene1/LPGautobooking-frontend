@@ -8,7 +8,7 @@ function Footer() {
     <div>
     <div name='footer' className='bg-black w-full mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-white'>
         <div>
-            <h1 className='my-2 flex w-full text-3xl font-bold text-[#00df9a]'>LPG<PropaneTankIcon className='mt-[6px]'/></h1>
+            <h1 className='my-2 flex w-full text-3xl font-bold text-[#00df9a]'><PropaneTankIcon className='mt-[6px]'/>Digi Cylinders</h1>
             <p className='py-4'>Our solution aims to solve the problem of how to measure the remaining LPG cylinder levels and notifies the user when it is depleted; and allows the user to remotely book a new cylinder for door-delivery.</p>
             <div className='flex md:w-[75%] my-6 justify-between'>
                 <FaGithub size={30}/>
@@ -95,7 +95,7 @@ function Footer() {
     </div>
         <div className="w-max-[1240px] mx-auto text-center p-6 bg-black">
             <span className='text-white'>© 2022 Copyright: </span>
-            <a className="text-gray-400 font-bold" href="#1">LPG</a>
+            <a className="text-gray-400 font-bold" href="#1">Digi Cylinders</a>
         </div>
     </div>
   )
