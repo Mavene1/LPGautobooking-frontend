@@ -5,10 +5,9 @@ import Pending from "./Pending";
 //import {Link} from 'react-router-dom'
 import PropTypes from "prop-types";
 
-export default function Sidebar({setToken}) {
+export default function Sidebar({setToken, token}) {
   const [open, setOpen] = useState(false);
   const [display, setDisplay] = useState("dashboard");
-  //console.log(display);
   return (
     <div className="flex">
       <div
@@ -148,8 +147,8 @@ export default function Sidebar({setToken}) {
         </div>
       </div>
       {display === "dashboard" && <Dashboard />}
-      {display === "completed" && <Completed />}
-      {display === "pending" && <Pending />}
+      {display === "completed" && <Completed token={token}/>}
+      {display === "pending" && <Pending token={token}/>}
     </div>
   );
 }

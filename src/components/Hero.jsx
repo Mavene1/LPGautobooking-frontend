@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import lpg from '../assets/lpg.jpg'
 import Form from './Form';
 
-function Hero() {
+function Hero({token}) {
   const [showForm, setShowForm] = useState(false)
 
   const handleOnClose=()=>setShowForm(false)
@@ -19,7 +19,7 @@ function Hero() {
                 <button onClick={()=>setShowForm(true)} type="button" className=" w-[150px] mb-6 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out mx-auto md:mx-0 ">Book Now</button>
             </div>
         </div>
-        <Form onClose={handleOnClose} visible={showForm}/>
+        <Form onClose={handleOnClose} visible={showForm} token={token}/>
     </div>
   )
 }

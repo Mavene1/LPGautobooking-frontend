@@ -28,7 +28,6 @@ async function signupUser(credentials) {
 
 export default function Login1({ setToken, setUser }) {
   const [view, setView] = useState("login");
-  //const [email, setEmail] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
@@ -122,7 +121,7 @@ export default function Login1({ setToken, setUser }) {
               className="w-full py-2 mt-6 mb-2 bg-green-600 hover:bg-green-500 relative text-white rounded-full"
               type="submit"
             >
-              {view === "login" ? "Log In" : "Signup"}
+              {view === "login" ? "Log In" : "Sign Up"}
             </button>
             <div>
               <Checkbox label="Remember Me" className="mt-0" />

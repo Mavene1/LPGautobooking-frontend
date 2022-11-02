@@ -15,7 +15,7 @@ function App() {
   if (!token) {
     return <Login1 setToken={setToken} setUser={setUser} />;
   }
-  console.log(user.roles);
+  
   if (user.roles.includes("vendor")) {
     return (
       <Sidebar
@@ -26,7 +26,7 @@ function App() {
       />
     );
   } else {
-    return <Home setToken={setToken} />;
+    return <Home setToken={setToken} token={token}/>;
   }
 }
 

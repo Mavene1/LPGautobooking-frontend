@@ -5,11 +5,11 @@ import Charts from "../components/Charts";
 import Footer from "../components/Footer";
 import PropTypes from "prop-types";
 
-const Home = ({ setToken }) => {
+const Home = ({ setToken, token }) => {
   return (
     <>
       <Navbar setToken={setToken} />
-      <Hero />
+      <Hero token={token}/>
       <Charts />
       <Footer />
     </>
